@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:ns1="http://tempuri.org/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <xs:import namespace="http://www.w3.org/2003/05/soap-envelope" schemaLocation="xsd.xsd"/>
+  <xs:element name="CardStatusBankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:CardStatusBankResult"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CardStatusBankResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:Code"/>
+        <xs:element ref="ns1:Desc"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Code" type="xs:int"/>
+  <xs:element name="Desc" type="xs:NCName"/>
+</xs:schema>

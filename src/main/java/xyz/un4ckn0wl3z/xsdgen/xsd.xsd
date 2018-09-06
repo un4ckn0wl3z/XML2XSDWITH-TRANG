@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://tempuri.org/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <xs:import namespace="http://tempuri.org/" schemaLocation="ns1.xsd"/>
+  <xs:element name="Envelope">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="soap12:Body"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Body">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:CardStatusBankResponse"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
